@@ -12,8 +12,8 @@
 - [x] Soroban contract unit tests
 - [x] Real-time contract-event polling and UI synchronization
 - [x] Screenshot: wallet options available (`docs/submission/assets/yellowbelt-wallet-options.png`)
-- [ ] Screenshot: deployed contract call success
-- [ ] Screenshot: live event feed
+- [x] Screenshot: deployed contract call success (`docs/submission/assets/yellowbelt-contract-success.png`)
+- [x] Screenshot: live event feed (`docs/submission/assets/yellowbelt-live-events.png`)
 - [x] More than 10 meaningful commits
 - [x] Latest CI workflow passing after Yellow Belt changes: [workflow run](https://github.com/Hexdee/orbit-pay/actions/runs/32910537542)
 - [x] No seed phrases, secret keys, or credentials committed
