@@ -26,6 +26,7 @@ Orbit Pay is a multi-wallet Stellar Testnet dApp that records payment receipts o
 | Contract | [`CC3ZNNYZ5F74AVXQEHUI655TIM37AQE5Z3PBUHD3WPCSRHP4G2FYQ5BA`](https://stellar.expert/explorer/testnet/contract/CC3ZNNYZ5F74AVXQEHUI655TIM37AQE5Z3PBUHD3WPCSRHP4G2FYQ5BA) |
 | Deploy transaction | [`45b1f6c2dac199b8fd3e495abc8ef9b162e3f14e0deaa2c0ff1c747b22e0a2c9`](https://stellar.expert/explorer/testnet/tx/45b1f6c2dac199b8fd3e495abc8ef9b162e3f14e0deaa2c0ff1c747b22e0a2c9) |
 | Initialize transaction | [`ddb6eb5f91f1542ff309ee3bdeec22c774461fa91f79dd1e72069b2f6acceade`](https://stellar.expert/explorer/testnet/tx/ddb6eb5f91f1542ff309ee3bdeec22c774461fa91f79dd1e72069b2f6acceade) |
+| Demo `record_payment` call | [`daba9fcf19c104d027eabd28bd2b3dd60f5595c0debfad5e00a9b16fce0cd8df`](https://stellar.expert/explorer/testnet/tx/daba9fcf19c104d027eabd28bd2b3dd60f5595c0debfad5e00a9b16fce0cd8df) |
 | WASM hash | `27c6ef5d99235348b1451a38e2843c542ab775ee2a88a663239519ce205bd367` |
 
 ## How to use the live app

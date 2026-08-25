@@ -11,7 +11,7 @@
 - [x] Three error classes handled: unavailable wallet, rejected wallet, unfunded account
 - [x] Soroban contract unit tests
 - [x] Real-time contract-event polling and UI synchronization
-- [ ] Screenshot: wallet options available
+- [x] Screenshot: wallet options available (`docs/submission/assets/yellowbelt-wallet-options.png`)
 - [ ] Screenshot: deployed contract call success
 - [ ] Screenshot: live event feed
 - [x] More than 10 meaningful commits
