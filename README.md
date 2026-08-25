@@ -51,15 +51,19 @@ pnpm preview
 
 ## Screenshots for submission
 
-Add these screenshots to `docs/submission/assets/` before submitting:
+The submission evidence is included in `docs/submission/assets/`:
 
 | File | Evidence |
 | --- | --- |
-| `wallet-connected.png` | Freighter connected state and shortened address |
-| `balance-displayed.png` | XLM balance displayed clearly |
-| `successful-testnet-transaction.png` | Success message, transaction hash/link, and ideally Stellar Expert confirmation |
+| [`orbit-pay-wallet-connected.png`](docs/submission/assets/orbit-pay-wallet-connected.png) | Freighter disconnected/connected UI with the Testnet balance visible |
+| [`orbit-pay-successful-transaction.png`](docs/submission/assets/orbit-pay-successful-transaction.png) | Connected wallet, balance, success state, and transaction link |
+| [`orbit-pay-initial-state.png`](docs/submission/assets/orbit-pay-initial-state.png) | Initial Testnet-only wallet state |
 
 The screenshots should show the deployed URL or local app in the browser, with wallet addresses and transaction data visible but no secret phrases or private keys.
+
+## Testnet transaction evidence
+
+The successful payment is visible in `orbit-pay-successful-transaction.png`. The full transaction hash still needs to be added here after confirming the 64-character value from Stellar Expert; the hash supplied for this submission was one character short for a valid Stellar transaction ID.
 
 ## Architecture
 
