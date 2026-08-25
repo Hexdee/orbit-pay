@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "contract:test": "cargo test --manifest-path Cargo.toml",
-    "contract:build": "stellar contract build --manifest-path Cargo.toml --out-dir artifacts",
+    "contract:build": "node scripts/build-contract.mjs",
     "contract:deploy": "STELLAR_SECRET=\"$(stellar keys secret alice)\" node scripts/deploy-yellowbelt.mjs",
     "contract:demo-call": "STELLAR_SECRET=\"$(stellar keys secret alice)\" PAYMENT_TRACKER_CONTRACT_ID=\"${VITE_PAYMENT_TRACKER_CONTRACT_ID:-CC3ZNNYZ5F74AVXQEHUI655TIM37AQE5Z3PBUHD3WPCSRHP4G2FYQ5BA}\" node scripts/record-demo-payment.mjs"
   },

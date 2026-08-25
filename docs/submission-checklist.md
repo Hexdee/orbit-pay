@@ -15,5 +15,5 @@
 - [ ] Screenshot: deployed contract call success
 - [ ] Screenshot: live event feed
 - [x] More than 10 meaningful commits
-- [ ] Latest CI workflow passing after Yellow Belt changes
+- [ ] Latest CI workflow passing after Yellow Belt changes (reruns after the build portability fix)
 - [x] No seed phrases, secret keys, or credentials committed
