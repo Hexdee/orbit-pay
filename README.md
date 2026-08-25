@@ -2,6 +2,9 @@
 
 Orbit Pay is a simple, user-facing XLM payment dApp built on Stellar Testnet. It demonstrates the complete White Belt flow: connect Freighter, read an account's XLM balance, sign an XLM payment, submit it to Testnet, and show the confirmed transaction to the user.
 
+- **Public repository:** [github.com/Hexdee/orbit-pay](https://github.com/Hexdee/orbit-pay)
+- **Live demo:** [orbit-pay-dusky.vercel.app](https://orbit-pay-dusky.vercel.app)
+
 ## White Belt requirements
 
 - Freighter wallet connection on Stellar Testnet
@@ -86,7 +89,7 @@ This is a Testnet-only educational dApp. XLM on Stellar Testnet has no real-worl
 
 ## Repository and deployment
 
-Create a public GitHub repository for this folder, connect it to Vercel or Netlify, and use the default Vite build settings:
+The project is published at [github.com/Hexdee/orbit-pay](https://github.com/Hexdee/orbit-pay) and deployed at [orbit-pay-dusky.vercel.app](https://orbit-pay-dusky.vercel.app). The deployment uses these Vite settings:
 
 - Install command: `pnpm install --frozen-lockfile`
 - Build command: `pnpm build`
