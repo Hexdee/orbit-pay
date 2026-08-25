@@ -1,14 +1,19 @@
-# White Belt submission checklist
+# Yellow Belt submission checklist
 
-- [ ] Public GitHub repository
-- [ ] Live deployed demo URL
-- [ ] README with project description
-- [ ] README with local setup instructions
-- [x] Screenshot: wallet connected state (`docs/submission/assets/orbit-pay-wallet-connected.png`)
-- [x] Screenshot: XLM balance displayed (`docs/submission/assets/orbit-pay-successful-transaction.png`)
-- [x] Screenshot: successful Testnet transaction (`docs/submission/assets/orbit-pay-successful-transaction.png`)
-- [x] Transaction result/hash shown in the app
-- [x] Full transaction hash and Stellar Expert confirmation added to README
-- [ ] At least 10 meaningful commits
-- [ ] CI workflow passing
-- [ ] No seed phrases, secret keys, or credentials committed
+- [x] Public GitHub repository: https://github.com/Hexdee/orbit-pay
+- [x] Live deployed demo: https://orbit-pay-dusky.vercel.app
+- [x] README with setup instructions
+- [x] Stellar Wallets Kit multi-wallet integration
+- [x] Soroban contract deployed on Testnet
+- [x] Contract address and deployment transaction in README
+- [x] Contract call from the frontend
+- [x] Transaction status visible in the UI
+- [x] Three error classes handled: unavailable wallet, rejected wallet, unfunded account
+- [x] Soroban contract unit tests
+- [x] Real-time contract-event polling and UI synchronization
+- [ ] Screenshot: wallet options available
+- [ ] Screenshot: deployed contract call success
+- [ ] Screenshot: live event feed
+- [x] More than 10 meaningful commits
+- [ ] Latest CI workflow passing after Yellow Belt changes
+- [x] No seed phrases, secret keys, or credentials committed

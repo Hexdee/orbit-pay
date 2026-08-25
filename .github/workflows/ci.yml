@@ -1,4 +1,4 @@
-name: White Belt CI
+name: Orbit Pay Yellow Belt CI
 
 on:
   push:
@@ -19,3 +19,11 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - run: pnpm build
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          toolchain: stable
+          components: rustfmt
+      - run: rustup target add wasm32v1-none
+      - run: cargo fmt --all -- --check
+      - run: cargo test --manifest-path Cargo.toml
+      - run: pnpm contract:build
