@@ -1,6 +1,6 @@
 import "./style.css";
 import { getNetworkDetails, isConnected, requestAccess, signTransaction } from "@stellar/freighter-api";
-import { Account, Asset, BASE_FEE, Horizon, Networks, Operation, TransactionBuilder } from "@stellar/stellar-sdk";
+import { Account, Asset, BASE_FEE, Horizon, Networks, Operation, StrKey, TransactionBuilder } from "@stellar/stellar-sdk";
 import { formatXlm, readableError, shortenAddress } from "./lib/format";
 
 const HORIZON_URL = "https://horizon-testnet.stellar.org";
@@ -116,7 +116,11 @@ async function connect() {
 
 async function sendPayment(recipient: string, amount: string) {
   if (!walletAddress) throw new Error("Connect Freighter before sending XLM.");
+  if (!StrKey.isValidEd25519PublicKey(recipient)) throw new Error("Enter a valid Stellar public address beginning with G.");
   if (recipient === walletAddress) throw new Error("Choose a recipient different from your connected wallet.");
+  const numericAmount = Number(amount);
+  if (!Number.isFinite(numericAmount) || numericAmount <= 0) throw new Error("Enter an amount greater than 0 XLM.");
+  if (numericAmount >= Number(balance)) throw new Error("Keep enough XLM in the wallet to cover the network fee.");
   const source = await horizon.loadAccount(walletAddress);
   const transaction = new TransactionBuilder(new Account(source.accountId(), source.sequence), { fee: BASE_FEE, networkPassphrase: NETWORK })
     .addOperation(Operation.payment({ destination: recipient, asset: Asset.native(), amount }))
