@@ -58,12 +58,16 @@ The submission evidence is included in `docs/submission/assets/`:
 | [`orbit-pay-wallet-connected.png`](docs/submission/assets/orbit-pay-wallet-connected.png) | Freighter disconnected/connected UI with the Testnet balance visible |
 | [`orbit-pay-successful-transaction.png`](docs/submission/assets/orbit-pay-successful-transaction.png) | Connected wallet, balance, success state, and transaction link |
 | [`orbit-pay-initial-state.png`](docs/submission/assets/orbit-pay-initial-state.png) | Initial Testnet-only wallet state |
+| [`orbit-pay-transaction-verification.png`](docs/submission/assets/orbit-pay-transaction-verification.png) | Stellar Expert confirmation showing the successful Testnet transaction |
 
 The screenshots should show the deployed URL or local app in the browser, with wallet addresses and transaction data visible but no secret phrases or private keys.
 
 ## Testnet transaction evidence
 
-The successful payment is visible in `orbit-pay-successful-transaction.png`. The full transaction hash still needs to be added here after confirming the 64-character value from Stellar Expert; the hash supplied for this submission was one character short for a valid Stellar transaction ID.
+The successful payment is visible in [`orbit-pay-successful-transaction.png`](docs/submission/assets/orbit-pay-successful-transaction.png), and the network confirmation is captured in [`orbit-pay-transaction-verification.png`](docs/submission/assets/orbit-pay-transaction-verification.png).
+
+- **Transaction hash:** `1193367d57fd31e11d55e9a23205987fe9ca5129a1a63cf8d069137d0fb5d32b`
+- **Stellar Expert:** [View successful Testnet transaction](https://stellar.expert/explorer/testnet/tx/1193367d57fd31e11d55e9a23205987fe9ca5129a1a63cf8d069137d0fb5d32b)
 
 ## Architecture
 
